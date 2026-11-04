@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katten min – Oleksandr Viller</title>
+    <!-- Samme stilark som på forsiden -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KATTEN MIN</h1>
+        <p class="undertittel">Møt Pusi</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#bilder">Bilder</a></li>
+                <li><a href="#annet">Annet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bilder av Pusi -->
+        <section id="bilder">
+            <h2>Pusi</h2>
+            <p>Pusi er svart, hvit og oransje, og hun har alltid en mening om alt.</p>
+
+            <!-- Bildene ligger side om side med Flexbox (se .galleri i style.css) -->
+            <div class="galleri">
+                <figure>
+                    <img src="bilder/pusi-glad.jpg" alt="Pusi ser spent ut">
+                    <figcaption>Pusi er spent.</figcaption>
+                </figure>
+                <figure>
+                    <img src="bilder/pusi-syr.jpg" alt="Pusi myser med øynene og ser mistenksom ut">
+                    <figcaption>Pusi er ikke imponert.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Litt tull til slutt -->
+        <section id="annet">
+            <h2>Ikke Pusi</h2>
+            <div class="galleri">
+                <figure>
+                    <img src="bilder/apen.jpg" alt="Nærbilde av en liten sjimpanse">
+                    <figcaption>Dette er ikke Pusi.</figcaption>
+                </figure>
+                <figure>
+                    <img src="bilder/kylling.webp" alt="Animert bilde av en kylling">
+                    <figcaption>Dette er heller ikke Pusi.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">← Tilbake til Om meg</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om meg – Oleksandr Viller</title>
+    <!-- Kobler siden til stilarket -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toppen av siden: hovedoverskrift og meny -->
+    <header>
+        <h1>OM MEG</h1>
+        <p class="undertittel">Denne nettsiden forteller om meg selv</p>
+
+        <!-- Navigasjonsmeny: de tre første lenkene hopper til deler på siden, den siste går til en annen side -->
+        <nav>
+            <ul>
+                <li><a href="#om-meg">Om meg</a></li>
+                <li><a href="#fakta">Fakta</a></li>
+                <li><a href="#sitat">Favorittsitat</a></li>
+                <li><a href="katt.html">Katten min</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Del 1: presentasjon og bilde side om side (Flexbox) -->
+        <section id="om-meg" class="presentasjon">
+            <div class="tekst">
+                <h2>Hei, jeg heter Oleksandr!</h2>
+                <p>
+                    Jeg heter Oleksandr Viller og er elev. Jeg synes det er gøy å lære
+                    om data og programmering, og denne siden er en del av det jeg
+                    lærer på skolen. Når jeg ikke sitter foran skjermen, tilbringer jeg
+                    tid med katten min, Pusi.
+                </p>
+            </div>
+
+            <figure>
+                <img src="bilder/pusi-glad.jpg" alt="Katten Pusi, svart og hvit, sitter og ser rett inn i kameraet">
+                <figcaption>Pusi, katten min og den viktigste personen i huset.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Del 2: tabell med fakta om meg -->
+        <section id="fakta">
+            <h2>Fakta om meg</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hva</th>
+                        <th>Svar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Navn</th>
+                        <td>Oleksandr Viller</td>
+                    </tr>
+                    <tr>
+                        <th>Interesse</th>
+                        <td>Programmering</td>
+                    </tr>
+                    <tr>
+                        <th>Kjæledyr</th>
+                        <td>Katten Pusi</td>
+                    </tr>
+                    <tr>
+                        <th>Dette jobber jeg med nå</th>
+                        <td>Min første nettside</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Del 3: favorittsitat -->
+        <section id="sitat">
+            <h2>Favorittsitat</h2>
+            <blockquote>
+                <p>Talk is cheap. Show me the code.</p>
+                <footer>Linus Torvalds</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- Bunnen av siden -->
+    <footer>
+        <p>Laget av Oleksandr Viller · <a href="katt.html">Se bilder av katten min →</a></p>
+    </footer>
+</body>
+</html>

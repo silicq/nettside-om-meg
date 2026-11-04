@@ -1,0 +1,199 @@
+/* Fargepalett:
+   krem        #FFF4E5  (bakgrunn)
+   mørk brun   #2B1D14  (tekst)
+   oransje     #B8530A  (hovedfarge, overskrifter og knapper)
+   lys oransje #F6D9B8  (bakgrunn til bokser og tabell) */
+
+/* Grunninnstillinger for hele siden */
+body {
+    margin: 0;
+    background-color: #FFF4E5;
+    color: #2B1D14;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Toppen av siden */
+header {
+    background-color: #B8530A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: #B8530A;
+    border-bottom: 3px solid #F6D9B8;
+    padding-bottom: 6px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+/* Klasse-velger: undertittelen under hovedoverskriften */
+.undertittel {
+    margin: 6px 0 20px;
+    font-style: italic;
+}
+
+/* Navigasjonsmeny: listen blir horisontal med Flexbox */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Hover-effekt: lenken skifter farge når musen er over */
+nav a:hover {
+    background-color: #FFF4E5;
+    color: #B8530A;
+}
+
+/* Hovedinnholdet får maks bredde slik at teksten ikke blir for bred */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hver del får litt luft rundt seg */
+section {
+    margin-bottom: 40px;
+}
+
+/* Id-velger: sitat-delen får litt ekstra luft under seg */
+#sitat {
+    padding: 0 0 10px;
+}
+
+/* Klasse: tekst og bilde ligger side om side */
+.presentasjon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.presentasjon .tekst {
+    flex: 1;
+}
+
+/* Bilder og bildetekster */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+    border: 4px solid #B8530A;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Tabell med fakta */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #B8530A;
+}
+
+th {
+    background-color: #F6D9B8;
+}
+
+thead th {
+    background-color: #B8530A;
+    color: #FFFFFF;
+}
+
+/* Sitat */
+blockquote {
+    margin: 0;
+    padding: 16px 24px;
+    background-color: #F6D9B8;
+    border-left: 6px solid #B8530A;
+    border-radius: 0 12px 12px 0;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 8px;
+}
+
+/* Underteksten i sitatet */
+blockquote footer {
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+blockquote footer::before {
+    content: "— ";
+}
+
+/* Bildegalleri på katt-siden: bildene ligger side om side */
+.galleri {
+    display: flex;
+    gap: 20px;
+}
+
+.galleri figure {
+    flex: 1;
+}
+
+/* Bunnen av siden */
+body > footer {
+    background-color: #2B1D14;
+    color: #FFF4E5;
+    text-align: center;
+    padding: 20px;
+}
+
+body > footer a {
+    color: #F6D9B8;
+}
+
+/* Smale skjermer (mobil): alt legges under hverandre */
+@media (max-width: 600px) {
+    .presentasjon,
+    .galleri {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
